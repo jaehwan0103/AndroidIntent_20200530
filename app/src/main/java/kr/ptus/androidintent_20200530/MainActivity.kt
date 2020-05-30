@@ -44,10 +44,22 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(Intent.ACTION_SENDTO, myUri)
             myIntent.putExtra("sms_body", "[광고] 이 앱을 공유해주세요")
             startActivity(myIntent)
+        }
 
+        naverLinkBtn.setOnClickListener {
+            val myUri = Uri.parse("https://naver.com")
+            val myIntent = Intent(Intent.ACTION_VIEW,myUri)
+            startActivity(myIntent)
 
         }
 
+        kakaoStoreLinkBtn.setOnClickListener {
+
+            val myUri = Uri.parse("market://details?id=com.kakao.talk")
+            val myIntent = Intent(Intent.ACTION_VIEW,myUri)
+            startActivity(myIntent)
+
+        }
 
     }
 }

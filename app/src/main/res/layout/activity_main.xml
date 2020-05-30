@@ -37,6 +37,18 @@
         android:layout_marginTop="20dp"
         android:text="문자보내기(SENDTO)"/>
 
+    <Button
+        android:id="@+id/naverLinkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="네이버웹링크"/>
 
+    <Button
+        android:id="@+id/kakaoStoreLinkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="카카오 플레이스토어링크"/>
 
 </LinearLayout>
