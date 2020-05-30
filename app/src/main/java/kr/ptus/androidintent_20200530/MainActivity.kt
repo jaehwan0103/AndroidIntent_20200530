@@ -22,6 +22,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
+        callBtn.setOnClickListener {
+
+            //타이핑 해둔 폰번을 받아오자 (String으로)
+
+            val phoneNum = phoneNumEdt.text.toString()
+
+//            어디로 전화 걸지 정보를 저장하는 uri를 만들자
+            val myUri = Uri.parse("tel:${phoneNum}")
+            val myIntent = Intent(Intent.ACTION_CALL, myUri)
+
+            startActivity(myIntent)
+        }
+
 
     }
 }
